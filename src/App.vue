@@ -62,7 +62,7 @@
         if ( appHeading ) {
             const bottomApp = appHeading.getBoundingClientRect().bottom;
             const { innerHeight } = window;
-            if (( bottomApp - innerHeight ) < 100 && !this.isLoading ) {
+            if (( bottomApp - innerHeight ) < 150 && !this.isLoading ) {
               this.isLoading = true;
               const nextPageData = await getData ( this.searchText, ++this.page );
               this.images.push ( ...nextPageData );
